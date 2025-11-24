@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root {
+  --color-cream: #F5F5DC;
+  --color-gold: #D4AF37;
+  --color-rose-gold: #B76E79;
+  --color-soft-beige: #F5F5F5;
+  --color-white: #FFFFFF;
+  --color-text-dark: #333333;
+  --color-text-light: #666666;
+  
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-soft-beige);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-gold), var(--color-rose-gold));
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-gold);
+  color: var(--color-gold);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--color-gold);
+  color: var(--color-white);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-rose-gold {
+  color: var(--color-rose-gold);
+}
