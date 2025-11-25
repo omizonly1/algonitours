@@ -5,7 +5,7 @@ const HajjUmrah = () => {
     const hajjPackages = [
         {
             title: "Economy Hajj Package",
-            price: "From $5,000",
+            price: "From ₹7,00,000",
             features: [
                 "Round-trip flights",
                 "3-star hotel accommodation",
@@ -16,7 +16,7 @@ const HajjUmrah = () => {
         },
         {
             title: "Premium Hajj Package",
-            price: "From $8,500",
+            price: "From ₹12,00,000",
             features: [
                 "Direct flights",
                 "5-star hotel near Haram",
@@ -31,22 +31,24 @@ const HajjUmrah = () => {
     const umrahPackages = [
         {
             title: "Economy Umrah",
-            price: "From $1,200",
+            price: "From ₹90,000",
             features: [
                 "Return flights",
                 "Standard hotels",
                 "Visa included",
-                "Shared transport"
+                "Free Airport Transfer",
+                "Free Travel Insurance"
             ]
         },
         {
             title: "Deluxe Umrah",
-            price: "From $2,500",
+            price: "From ₹1,20,000",
             features: [
                 "Round-trip flights",
                 "Luxury hotels (walking distance)",
                 "Visa included",
-                "Insurance included",
+                "Free Airport Transfer",
+                "Free Travel Insurance",
                 "Private transport",
                 "Ziyarat tours",
                 "Full board meals"
@@ -54,7 +56,7 @@ const HajjUmrah = () => {
         },
         {
             title: "Luxury Umrah",
-            price: "From $3,500",
+            price: "From ₹2,90,000",
             features: [
                 "Premium airlines (Emirates or similar)",
                 "Luxury hotels (Clock Tower or similar)",

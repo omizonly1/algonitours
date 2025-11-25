@@ -29,7 +29,6 @@ const Navbar = () => {
           `}</style>
           <Link to="/" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Home</Link>
           <Link to="/about" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>About Us</Link>
-          <Link to="/hajj-umrah" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Hajj & Umrah</Link>
           <Link to="/services" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Services</Link>
           <Link to="/contact" className="btn btn-primary" style={{ padding: '8px 20px', color: 'white' }}>Contact Us</Link>
         </div>

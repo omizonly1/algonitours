@@ -14,7 +14,7 @@ const About = () => {
         <div className="container">
           <h1 style={{ fontSize: '3rem', color: 'var(--color-gold)' }}>About Al Goni Tours and Travels</h1>
           <p style={{ maxWidth: '600px', margin: '0 auto', fontSize: '1.2rem', color: '#ccc' }}>
-            Your trusted partner in spiritual and luxury travel since 2010.
+            Your trusted partner in spiritual and luxury travel since 1999.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ const About = () => {
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '50px' }}>
             <div style={{ flex: 1, minWidth: '300px' }}>
               <img
-                src="https://images.unsplash.com/photo-1527631746610-bca54d082238?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="/src/assets/mission.jpg"
                 alt="Our Mission"
                 style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
               />
@@ -33,7 +33,7 @@ const About = () => {
             <div style={{ flex: 1, minWidth: '300px' }}>
               <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Our Mission</h2>
               <p style={{ marginBottom: '1.5rem', color: 'var(--color-text-light)' }}>
-                At Al Goni Tours and Travels, our mission is to provide seamless, spiritual, and luxurious travel experiences. We understand that travel is not just about moving from one place to another; it is about the journey, the memories, and the peace of mind.
+                At Al Goni Tours and Travels, our mission is to provide seamless, spiritual and luxurious travel experiences. We understand that travel is not just about moving from one place to another; it is about the journey, the memories, and the peace of mind.
               </p>
               <p style={{ color: 'var(--color-text-light)' }}>
                 We strive to exceed expectations by offering personalized services, premium accommodations, and expert guidance, ensuring that every trip with us is a journey of a lifetime.
