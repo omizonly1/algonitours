@@ -12,9 +12,12 @@ import CustomTours from './pages/CustomTours';
 import Travel_Insurance from './pages/Travel_Insurance';
 import FlightBooking from './pages/FlightBooking';
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
         <main style={{ flex: 1 }}>

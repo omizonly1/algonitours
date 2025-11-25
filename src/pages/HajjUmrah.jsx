@@ -76,7 +76,6 @@ const HajjUmrah = () => {
             <section style={{
                 backgroundColor: 'var(--color-text-dark)',
                 color: 'white',
-                padding: '100px 0',
                 textAlign: 'center',
                 backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://images.unsplash.com/photo-1565552629477-e254f38aa89d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")',
                 backgroundSize: 'cover',
