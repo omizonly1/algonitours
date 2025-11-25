@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MapPin, Calendar, CheckCircle, Star, Shield, Users } from 'lucide-react';
 
 const HajjUmrah = () => {
@@ -57,6 +58,7 @@ const HajjUmrah = () => {
         {
             title: "Luxury Umrah",
             price: "From ₹2,90,000",
+            link: "/luxury-umrah",
             features: [
                 "Premium airlines (Emirates or similar)",
                 "Luxury hotels (Clock Tower or similar)",
@@ -112,7 +114,13 @@ const HajjUmrah = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <button className="btn btn-primary" style={{ width: '100%', marginTop: '20px' }}>Book Now</button>
+                                {pkg.link ? (
+                                    <Link to={pkg.link} className="btn btn-primary" style={{ width: '100%', marginTop: '20px', display: 'inline-block', textAlign: 'center' }}>
+                                        View Details
+                                    </Link>
+                                ) : (
+                                    <button className="btn btn-primary" style={{ width: '100%', marginTop: '20px' }}>Book Now</button>
+                                )}
                             </div>
                         ))}
                     </div>

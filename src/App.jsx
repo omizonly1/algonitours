@@ -11,6 +11,7 @@ import VisaAssistance from './pages/VisaAssistance';
 import CustomTours from './pages/CustomTours';
 import Travel_Insurance from './pages/Travel_Insurance';
 import FlightBooking from './pages/FlightBooking';
+import LuxuryUmrah from './pages/LuxuryUmrah';
 
 import ScrollToTop from './components/ScrollToTop';
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="/custom-tours" element={<CustomTours />} />
             <Route path="/travel-insurance" element={<Travel_Insurance />} />
             <Route path="/flight-booking" element={<FlightBooking />} />
+            <Route path="/luxury-umrah" element={<LuxuryUmrah />} />
           </Routes>
         </main>
         <Footer />
