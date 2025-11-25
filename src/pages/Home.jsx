@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Plane, Shield, Star, Globe, Clock } from 'lucide-react';
+import RevealOnScroll from '../components/RevealOnScroll';
 
 const Home = () => {
   return (
@@ -52,113 +53,117 @@ const Home = () => {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
-            {/* Service 1 */}
-            <div
-              style={{
-                padding: '40px',
-                backgroundColor: 'var(--color-soft-beige)',
-                borderRadius: '12px',
-                transition: 'transform 0.3s ease',
-                cursor: 'pointer',
-              }}
-              className="service-card"
-              onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
-              onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
-            >
-              <Link to="/hajj-umrah" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-                <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
-                  <Globe size={30} color="var(--color-gold)" />
-                </div>
-                <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Hajj & Umrah</h3>
-                <p style={{ color: 'var(--color-text-light)' }}>Spiritual journeys with complete peace of mind, luxury accommodations, and guided tours.</p>
-              </Link>
+          <RevealOnScroll>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+              {/* Service 1 */}
+              <div
+                style={{
+                  padding: '40px',
+                  backgroundColor: 'var(--color-soft-beige)',
+                  borderRadius: '12px',
+                  transition: 'transform 0.3s ease',
+                  cursor: 'pointer',
+                }}
+                className="service-card"
+                onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
+              >
+                <Link to="/hajj-umrah" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                  <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
+                    <Globe size={30} color="var(--color-gold)" />
+                  </div>
+                  <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Hajj & Umrah</h3>
+                  <p style={{ color: 'var(--color-text-light)' }}>Spiritual journeys with complete peace of mind, luxury accommodations, and guided tours.</p>
+                </Link>
+              </div>
+              {/* Service 2 */}
+              <div
+                style={{
+                  padding: '40px',
+                  backgroundColor: 'var(--color-soft-beige)',
+                  borderRadius: '12px',
+                  transition: 'transform 0.3s ease',
+                  cursor: 'pointer',
+                }}
+                className="service-card"
+                onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
+              >
+                <Link to="/flight-booking" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                  <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
+                    <Plane size={30} color="var(--color-rose-gold)" />
+                  </div>
+                  <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Flight Booking</h3>
+                  <p style={{ color: 'var(--color-text-light)' }}>Explore exotic destinations with our curated international tour packages designed for comfort.</p>
+                </Link>
+              </div>
+              {/* Service 3 */}
+              <div
+                style={{
+                  padding: '40px',
+                  backgroundColor: 'var(--color-soft-beige)',
+                  borderRadius: '12px',
+                  transition: 'transform 0.3s ease',
+                  cursor: 'pointer',
+                }}
+                className="service-card"
+                onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
+              >
+                <Link to="/visa-assistance" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                  <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
+                    <Shield size={30} color="var(--color-gold)" />
+                  </div>
+                  <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Visa Assistance</h3>
+                  <p style={{ color: 'var(--color-text-light)' }}>Hassle-free visa processing for all major destinations worldwide with expert guidance.</p>
+                </Link>
+              </div>
             </div>
-            {/* Service 2 */}
-            <div
-              style={{
-                padding: '40px',
-                backgroundColor: 'var(--color-soft-beige)',
-                borderRadius: '12px',
-                transition: 'transform 0.3s ease',
-                cursor: 'pointer',
-              }}
-              className="service-card"
-              onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
-              onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
-            >
-              <Link to="/flight-booking" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-                <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
-                  <Plane size={30} color="var(--color-rose-gold)" />
-                </div>
-                <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Flight Booking</h3>
-                <p style={{ color: 'var(--color-text-light)' }}>Explore exotic destinations with our curated international tour packages designed for comfort.</p>
-              </Link>
-            </div>
-            {/* Service 3 */}
-            <div
-              style={{
-                padding: '40px',
-                backgroundColor: 'var(--color-soft-beige)',
-                borderRadius: '12px',
-                transition: 'transform 0.3s ease',
-                cursor: 'pointer',
-              }}
-              className="service-card"
-              onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
-              onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
-            >
-              <Link to="/visa-assistance" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
-                <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
-                  <Shield size={30} color="var(--color-gold)" />
-                </div>
-                <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Visa Assistance</h3>
-                <p style={{ color: 'var(--color-text-light)' }}>Hassle-free visa processing for all major destinations worldwide with expert guidance.</p>
-              </Link>
-            </div>
-          </div>
+          </RevealOnScroll>
         </div>
       </section>
 
       {/* Why Choose Us */}
       <section className="section-padding" style={{ backgroundColor: 'var(--color-cream)' }}>
         <div className="container">
-          <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '50px' }}>
-            <div style={{ flex: 1, minWidth: '300px' }}>
-              <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Why Choose <span style={{ color: 'var(--color-gold)' }}>Al Goni Tours and Travels?</span></h2>
-              <p style={{ marginBottom: '2rem', color: 'var(--color-text-light)' }}>
-                We are committed to excellence in every aspect of your journey. Here is why thousands of travelers trust us.
-              </p>
-              <ul style={{ listStyle: 'none', padding: 0 }}>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-                  <div style={{ padding: '8px', backgroundColor: 'var(--color-gold)', borderRadius: '50%', display: 'flex' }}>
-                    <Shield size={16} color="white" />
-                  </div>
-                  <span style={{ fontWeight: '600' }}>Trusted & Reliable Service</span>
-                </li>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-                  <div style={{ padding: '8px', backgroundColor: 'var(--color-rose-gold)', borderRadius: '50%', display: 'flex' }}>
-                    <Clock size={16} color="white" />
-                  </div>
-                  <span style={{ fontWeight: '600' }}>24/7 Customer Support</span>
-                </li>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
-                  <div style={{ padding: '8px', backgroundColor: 'var(--color-gold)', borderRadius: '50%', display: 'flex' }}>
-                    <Star size={16} color="white" />
-                  </div>
-                  <span style={{ fontWeight: '600' }}>Premium & Luxury Options</span>
-                </li>
-              </ul>
-              <Link to="/about" className="btn btn-primary" style={{ marginTop: '20px', display: 'inline-block' }}>Learn More About Us</Link>
+          <RevealOnScroll delay={0.2}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '50px' }}>
+              <div style={{ flex: 1, minWidth: '300px' }}>
+                <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Why Choose <span style={{ color: 'var(--color-gold)' }}>Al Goni Tours and Travels?</span></h2>
+                <p style={{ marginBottom: '2rem', color: 'var(--color-text-light)' }}>
+                  We are committed to excellence in every aspect of your journey. Here is why thousands of travelers trust us.
+                </p>
+                <ul style={{ listStyle: 'none', padding: 0 }}>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+                    <div style={{ padding: '8px', backgroundColor: 'var(--color-gold)', borderRadius: '50%', display: 'flex' }}>
+                      <Shield size={16} color="white" />
+                    </div>
+                    <span style={{ fontWeight: '600' }}>Trusted & Reliable Service</span>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+                    <div style={{ padding: '8px', backgroundColor: 'var(--color-rose-gold)', borderRadius: '50%', display: 'flex' }}>
+                      <Clock size={16} color="white" />
+                    </div>
+                    <span style={{ fontWeight: '600' }}>24/7 Customer Support</span>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '15px' }}>
+                    <div style={{ padding: '8px', backgroundColor: 'var(--color-gold)', borderRadius: '50%', display: 'flex' }}>
+                      <Star size={16} color="white" />
+                    </div>
+                    <span style={{ fontWeight: '600' }}>Premium & Luxury Options</span>
+                  </li>
+                </ul>
+                <Link to="/about" className="btn btn-primary" style={{ marginTop: '20px', display: 'inline-block' }}>Learn More About Us</Link>
+              </div>
+              <div style={{ flex: 1, minWidth: '300px' }}>
+                <img
+                  src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80"
+                  alt="Travel"
+                  style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
+                />
+              </div>
             </div>
-            <div style={{ flex: 1, minWidth: '300px' }}>
-              <img
-                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80"
-                alt="Travel"
-                style={{ width: '100%', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
-              />
-            </div>
-          </div>
+          </RevealOnScroll>
         </div>
       </section>
 

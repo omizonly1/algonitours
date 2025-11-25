@@ -314,7 +314,7 @@ const FlightBooking = ({
                                 className="flight-wa-link"
                                 href="https://wa.me/919434135749?text=I%20want%20to%20book%20a%20flight"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 Or chat on WhatsApp
                             </a>

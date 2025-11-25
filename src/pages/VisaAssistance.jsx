@@ -230,7 +230,7 @@ const VisaRequirementsSection = ({
                                 className="visa-wa-link"
                                 href="https://wa.me/919434135749?text=I%20need%20help%20with%20visa%20assistance"
                                 target="_blank"
-                                rel="noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 Or chat on WhatsApp
                             </a>

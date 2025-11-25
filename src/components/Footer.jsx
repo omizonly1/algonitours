@@ -18,9 +18,9 @@ const Footer = () => {
                             Your trusted partner for spiritual journeys and luxury travel experiences. We make your dreams come true with our premium services.
                         </p>
                         <div style={{ display: 'flex', gap: '15px' }}>
-                            <a href="https://www.instagram.com/algonitours/" style={{ color: 'var(--color-gold)' }}><Instagram size={20} /></a>
-                            <a href="https://www.facebook.com/algonitours" style={{ color: 'var(--color-gold)' }}><Facebook size={20} /></a>
-                            <a href="https://twitter.com/algonitours" style={{ color: 'var(--color-gold)' }}><Twitter size={20} /></a>
+                            <a href="https://www.instagram.com/algonitours/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gold)' }}><Instagram size={20} /></a>
+                            <a href="https://www.facebook.com/algonitours" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gold)' }}><Facebook size={20} /></a>
+                            <a href="https://twitter.com/algonitours" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-gold)' }}><Twitter size={20} /></a>
                         </div>
                     </div>
 
@@ -40,15 +40,15 @@ const Footer = () => {
                         <h4 style={{ color: 'var(--color-gold)', marginBottom: '20px' }}>Contact Us</h4>
                         <ul style={{ listStyle: 'none', padding: 0 }}>
                             <li style={{ marginBottom: '15px', display: 'flex', gap: '10px', color: '#ccc' }}>
-                                <MapPin size={20} style={{ color: 'var(--color-gold)', minWidth: '20px' }} />
+                                <MapPin size={40} style={{ color: 'var(--color-gold)', minWidth: '20px' }} />
                                 <span>Alam Market, Pandua, Hooghly, West Bengal, India, 712149</span>
                             </li>
                             <li style={{ marginBottom: '15px', display: 'flex', gap: '10px', color: '#ccc' }}>
-                                <Phone size={20} style={{ color: 'var(--color-gold)', minWidth: '20px' }} />
+                                <Phone size={25} style={{ color: 'var(--color-gold)', minWidth: '20px' }} />
                                 <span>+91 94341 35749</span>
                             </li>
                             <li style={{ marginBottom: '15px', display: 'flex', gap: '10px', color: '#ccc' }}>
-                                <Mail size={20} style={{ color: 'var(--color-gold)', minWidth: '20px' }} />
+                                <Mail size={25} style={{ color: 'var(--color-gold)', minWidth: '20px' }} />
                                 <span>al.goni.tours.and.travels@gmail.com</span>
                             </li>
                         </ul>
