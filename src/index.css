@@ -334,7 +334,7 @@ button {
 }
 
 /* Contact form section */
-.contact-us {}
+
 
 .visa-contact {
   margin-top: 3rem;
@@ -434,6 +434,299 @@ button {
 
 @media (max-width: 640px) {
   .visa-form-row {
+    flex-direction: column;
+  }
+}
+
+/* ===========================
+   FLIGHT BOOKING PAGE
+   =========================== */
+
+.flight-section {
+  padding: 4.5rem 1.5rem 4rem;
+  background: radial-gradient(circle at top right, #fffaf4 0, #f5eee5 45%, #f1e6d8 100%);
+}
+
+.flight-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Top label */
+.flight-kicker {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(16, 24, 40, 0.08);
+  color: #4b3b24;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+.flight-header {
+  margin-bottom: 2.5rem;
+}
+
+.flight-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.flight-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.flight-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-company {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.flight-tagline {
+  font-size: 0.85rem;
+  color: #8b6a3b;
+}
+
+.flight-title {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 0.6rem;
+  color: #221a12;
+}
+
+.flight-subtitle {
+  max-width: 640px;
+  color: #5a5247;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Layout */
+.flight-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
+  gap: 1.8rem;
+  margin-top: 2.2rem;
+}
+
+.flight-form {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 22px;
+  padding: 1.8rem 1.7rem 1.7rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(204, 170, 120, 0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.flight-block h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #3c332a;
+  margin-bottom: 0.9rem;
+}
+
+.flight-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flight-field {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.flight-field--full {
+  min-width: 100%;
+}
+
+.flight-field label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6c5c49;
+}
+
+.flight-field input,
+.flight-field select,
+.flight-field textarea {
+  border-radius: 12px;
+  border: 1px solid rgba(155, 130, 96, 0.35);
+  padding: 0.65rem 0.8rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  background: rgba(255, 255, 255, 0.96);
+  transition: border 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.flight-field textarea {
+  resize: vertical;
+}
+
+.flight-field input:focus,
+.flight-field select:focus,
+.flight-field textarea:focus {
+  border-color: #c49a56;
+  box-shadow: 0 0 0 1px rgba(196, 154, 86, 0.4);
+  background: #fffdf8;
+}
+
+/* Trip toggle */
+.flight-trip-toggle {
+  display: inline-flex;
+  padding: 0.18rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.flight-trip-btn {
+  border: none;
+  background: transparent;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #5e5243;
+}
+
+.flight-trip-btn--active {
+  background: #111111;
+  color: #f7ede0;
+}
+
+/* Actions */
+.flight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.flight-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.65rem 1.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #c49a56, #e7c18b);
+  color: #1f1405;
+  box-shadow: 0 10px 25px rgba(196, 154, 86, 0.5);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.flight-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(196, 154, 86, 0.65);
+}
+
+.flight-button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(196, 154, 86, 0.45);
+}
+
+.flight-wa-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #206141;
+  font-weight: 500;
+}
+
+.flight-wa-link:hover {
+  text-decoration: underline;
+}
+
+/* Aside */
+.flight-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.flight-info-card {
+  background: rgb(255, 255, 255);
+  color: #000000;
+  border-radius: 18px;
+  padding: 1.3rem 1.2rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.flight-info-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.flight-info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.flight-info-card li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.flight-info-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.flight-info-card--highlight {
+  background: linear-gradient(145deg, #ffffff, #fd8505b2);
+}
+
+.flight-contact-line {
+  font-size: 0.9rem;
+  margin: 0.15rem 0;
+}
+
+/* Responsive */
+@media (max-width: 840px) {
+  .flight-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .flight-section {
+    padding: 3.2rem 1.25rem 3rem;
+  }
+
+  .flight-title {
+    font-size: 1.6rem;
+  }
+
+  .flight-row {
     flex-direction: column;
   }
 }

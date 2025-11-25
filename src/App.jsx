@@ -8,6 +8,9 @@ import Contact from './pages/Contact';
 import HajjUmrah from './pages/HajjUmrah';
 import HolidayPackages from './pages/HolidayPackages';
 import VisaAssistance from './pages/VisaAssistance';
+import CustomTours from './pages/CustomTours';
+import Travel_Insurance from './pages/Travel_Insurance';
+import FlightBooking from './pages/FlightBooking';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
             <Route path="/hajj-umrah" element={<HajjUmrah />} />
             <Route path="/holiday-packages" element={<HolidayPackages />} />
             <Route path="/visa-assistance" element={<VisaAssistance />} />
+            <Route path="/custom-tours" element={<CustomTours />} />
+            <Route path="/travel-insurance" element={<Travel_Insurance />} />
+            <Route path="/flight-booking" element={<FlightBooking />} />
           </Routes>
         </main>
         <Footer />

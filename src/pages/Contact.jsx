@@ -48,7 +48,7 @@ const Contact = () => {
 
       <section className="section-padding">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '50px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '200px' }}>
 
             {/* Contact form */}
             <div className="contact-us">
@@ -153,7 +153,7 @@ const Contact = () => {
                   </button>
                   <a
                     className="visa-wa-link"
-                    href="https://wa.me/919434135749?text=I%20need%20help%20with%20visa%20assistance"
+                    href="https://wa.me/919434135749?text=I%20need%20help%20with%20travel%20assistance"
                     target="_blank"
                     rel="noreferrer"
                   >
