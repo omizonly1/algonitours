@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar" style={{ backgroundColor: 'var(--color-white)', boxShadow: '0 2px 10px rgba(0,0,0,0.1)', position: 'sticky', top: 0, zIndex: 1000 }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 20px' }}>
         <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <img src="/logo.png" alt="Al Goni Tours and Travels" style={{ height: '50px' }} />
+          <img src="/logo.png" alt="Al Goni Tours and Travels" style={{ height: '60px' }} />
           <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', fontWeight: '700', color: 'var(--color-text-dark)' }}>
             Al Goni Tours and Travels
           </span>
