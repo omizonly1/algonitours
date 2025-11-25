@@ -14,6 +14,7 @@ import CustomTours from '../pages/CustomTours';
 import Travel_Insurance from '../pages/Travel_Insurance';
 import FlightBooking from '../pages/FlightBooking';
 import LuxuryUmrah from '../pages/LuxuryUmrah';
+import UmrahGuideSection from '../pages/UmrahGuideSection';
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -32,6 +33,7 @@ const AnimatedRoutes = () => {
                 <Route path="/travel-insurance" element={<PageTransition><Travel_Insurance /></PageTransition>} />
                 <Route path="/flight-booking" element={<PageTransition><FlightBooking /></PageTransition>} />
                 <Route path="/luxury-umrah" element={<PageTransition><LuxuryUmrah /></PageTransition>} />
+                <Route path="/umrah-guide" element={<PageTransition><UmrahGuideSection /></PageTransition>} />
             </Routes>
         </AnimatePresence>
     );

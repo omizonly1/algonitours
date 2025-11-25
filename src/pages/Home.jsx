@@ -2,6 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Plane, Shield, Star, Globe, Clock } from 'lucide-react';
 import RevealOnScroll from '../components/RevealOnScroll';
+import PopularDestinations from '../components/PopularDestinations';
+import Testimonials from '../components/Testimonials';
+import FAQ from '../components/FAQ';
+import Newsletter from '../components/Newsletter';
+import Partners from '../components/Partners';
+import Stats from '../components/Stats';
+import BlogPreview from '../components/BlogPreview';
 
 const Home = () => {
   return (
@@ -41,6 +48,18 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+      {/* Partners */}
+      <Partners />
+
+
+
+      {/* Popular Destinations */}
+      <RevealOnScroll>
+        <PopularDestinations />
+      </RevealOnScroll>
 
       {/* Services Teaser */}
       <section className="section-padding" style={{ backgroundColor: 'var(--color-white)' }}>
@@ -167,6 +186,33 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Stats */}
+      <div className="container">
+        <RevealOnScroll>
+          <Stats />
+        </RevealOnScroll>
+      </div>
+
+      {/* Testimonials */}
+      <RevealOnScroll>
+        <Testimonials />
+      </RevealOnScroll>
+
+      {/* FAQ */}
+      <RevealOnScroll>
+        <FAQ />
+      </RevealOnScroll>
+
+      {/* Blog Preview */}
+      <RevealOnScroll>
+        <BlogPreview />
+      </RevealOnScroll>
+
+      {/* Newsletter */}
+      <RevealOnScroll>
+        <Newsletter />
+      </RevealOnScroll>
+
       {/* CTA Section */}
       <section className="section-padding" style={{ backgroundColor: 'var(--color-text-dark)', color: 'white', textAlign: 'center' }}>
         <div className="container">
@@ -177,7 +223,7 @@ const Home = () => {
           <Link to="/contact" className="btn btn-primary" style={{ padding: '15px 40px' }}>Get a Quote</Link>
         </div>
       </section>
-    </div>
+    </div >
   );
 };
 
