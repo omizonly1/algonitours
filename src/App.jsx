@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import HajjUmrah from './pages/HajjUmrah';
+import HolidayPackages from './pages/HolidayPackages';
+import VisaAssistance from './pages/VisaAssistance';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/hajj-umrah" element={<HajjUmrah />} />
+            <Route path="/holiday-packages" element={<HolidayPackages />} />
+            <Route path="/visa-assistance" element={<VisaAssistance />} />
           </Routes>
         </main>
         <Footer />

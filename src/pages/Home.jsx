@@ -54,28 +54,69 @@ const Home = () => {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
             {/* Service 1 */}
-            <div style={{ padding: '40px', backgroundColor: 'var(--color-soft-beige)', borderRadius: '12px', transition: 'transform 0.3s ease', cursor: 'pointer' }} className="service-card">
-              <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
-                <Globe size={30} color="var(--color-gold)" />
-              </div>
-              <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Hajj & Umrah</h3>
-              <p style={{ color: 'var(--color-text-light)' }}>Spiritual journeys with complete peace of mind, luxury accommodations, and guided tours.</p>
+            <div
+              style={{
+                padding: '40px',
+                backgroundColor: 'var(--color-soft-beige)',
+                borderRadius: '12px',
+                transition: 'transform 0.3s ease',
+                cursor: 'pointer',
+              }}
+              className="service-card"
+              onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
+            >
+              <Link to="/hajj-umrah" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
+                  <Globe size={30} color="var(--color-gold)" />
+                </div>
+                <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Hajj & Umrah</h3>
+                <p style={{ color: 'var(--color-text-light)' }}>Spiritual journeys with complete peace of mind, luxury accommodations, and guided tours.</p>
+              </Link>
             </div>
             {/* Service 2 */}
-            <div style={{ padding: '40px', backgroundColor: 'var(--color-soft-beige)', borderRadius: '12px', transition: 'transform 0.3s ease', cursor: 'pointer' }} className="service-card">
-              <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
-                <Star size={30} color="var(--color-rose-gold)" />
-              </div>
-              <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Luxury Holidays</h3>
-              <p style={{ color: 'var(--color-text-light)' }}>Explore exotic destinations with our curated international tour packages designed for comfort.</p>
+            <div
+              style={{
+                padding: '40px',
+                backgroundColor: 'var(--color-soft-beige)',
+                borderRadius: '12px',
+                transition: 'transform 0.3s ease',
+                cursor: 'pointer',
+              }}
+              className="service-card"
+              onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
+            >
+              <Link to="/holiday-packages" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                <div style={{ padding: '40px', backgroundColor: 'var(--color-soft-beige)', borderRadius: '12px', transition: 'transform 0.3s ease', cursor: 'pointer' }} className="service-card">
+                  <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
+                    <Star size={30} color="var(--color-rose-gold)" />
+                  </div>
+                  <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Luxury Holidays</h3>
+                  <p style={{ color: 'var(--color-text-light)' }}>Explore exotic destinations with our curated international tour packages designed for comfort.</p>
+                </div>
+              </Link>
             </div>
             {/* Service 3 */}
-            <div style={{ padding: '40px', backgroundColor: 'var(--color-soft-beige)', borderRadius: '12px', transition: 'transform 0.3s ease', cursor: 'pointer' }} className="service-card">
-              <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
-                <Shield size={30} color="var(--color-gold)" />
-              </div>
-              <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Visa Assistance</h3>
-              <p style={{ color: 'var(--color-text-light)' }}>Hassle-free visa processing for all major destinations worldwide with expert guidance.</p>
+            <div
+              style={{
+                padding: '40px',
+                backgroundColor: 'var(--color-soft-beige)',
+                borderRadius: '12px',
+                transition: 'transform 0.3s ease',
+                cursor: 'pointer',
+              }}
+              className="service-card"
+              onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-5px)')}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
+            >
+              <Link to="/visa-assistance" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
+                <div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}>
+                  <Shield size={30} color="var(--color-gold)" />
+                </div>
+                <h3 style={{ color: 'var(--color-text-dark)', marginBottom: '15px' }}>Visa Assistance</h3>
+                <p style={{ color: 'var(--color-text-light)' }}>Hassle-free visa processing for all major destinations worldwide with expert guidance.</p>
+              </Link>
             </div>
           </div>
         </div>

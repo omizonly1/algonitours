@@ -29,6 +29,7 @@ const Navbar = () => {
           `}</style>
           <Link to="/" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Home</Link>
           <Link to="/about" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>About Us</Link>
+          <Link to="/hajj-umrah" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Hajj & Umrah</Link>
           <Link to="/services" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Services</Link>
           <Link to="/contact" className="btn btn-primary" style={{ padding: '8px 20px', color: 'white' }}>Contact Us</Link>
         </div>
@@ -56,6 +57,7 @@ const Navbar = () => {
         }}>
           <Link to="/" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Home</Link>
           <Link to="/about" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>About Us</Link>
+          <Link to="/hajj-umrah" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Hajj & Umrah</Link>
           <Link to="/services" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Services</Link>
           <Link to="/contact" onClick={toggleMenu} className="btn btn-primary" style={{ color: 'white', display: 'inline-block' }}>Contact Us</Link>
         </div>
