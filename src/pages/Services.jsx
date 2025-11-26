@@ -32,7 +32,7 @@ const Services = () => {
             icon: <Map size={40} color="var(--color-gold)" />,
             title: "Custom Tours",
             description: "Don't like pre-packaged tours? Let us design a custom itinerary just for you. Tell us your preferences, and we will create a personalized travel experience.",
-            link: "/custom-tours"
+            link: "/custom-package"
         },
         {
             icon: <Umbrella size={40} color="var(--color-rose-gold)" />,

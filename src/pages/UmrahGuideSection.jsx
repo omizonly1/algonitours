@@ -27,7 +27,7 @@ const UmrahGuideSection = () => {
             {/* Content Wrapper */}
             <section className="umrah-content container">
                 {/* What is Umrah */}
-                <article className="umrah-card">
+                <article className="umrah-card glass-card">
                     <h2>What is Umrah?</h2>
                     <p>
                         Umrah is a blessed act of worship that includes entering into{" "}
@@ -51,7 +51,7 @@ const UmrahGuideSection = () => {
                 </article>
 
                 {/* Before You Travel */}
-                <article className="umrah-card">
+                <article className="umrah-card glass-card">
                     <h2>Before You Travel</h2>
                     <ul className="umrah-list">
                         <li>
@@ -72,7 +72,7 @@ const UmrahGuideSection = () => {
                 </article>
 
                 {/* Step-by-Step Guide */}
-                <article className="umrah-card">
+                <article className="umrah-card glass-card">
                     <h2>Step-by-Step Umrah Guide (Hanafi)</h2>
 
                     <div className="umrah-step">
@@ -191,7 +191,7 @@ const UmrahGuideSection = () => {
                 </article>
 
                 {/* Prohibitions */}
-                <article className="umrah-card">
+                <article className="umrah-card glass-card">
                     <h2>Things Prohibited in Ihram (Hanafi)</h2>
                     <ul className="umrah-list">
                         <li>Cutting hair or nails after entering Ihram.</li>
@@ -215,7 +215,7 @@ const UmrahGuideSection = () => {
                 </article>
 
                 {/* Our Support */}
-                <article className="umrah-card">
+                <article className="umrah-card glass-card">
                     <h2>How We Support Your Umrah Journey</h2>
                     <ul className="umrah-list">
                         <li>

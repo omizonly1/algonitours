@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar" style={{ backgroundColor: 'var(--color-white)', boxShadow: '0 2px 10px rgba(0,0,0,0.1)', position: 'sticky', top: 0, zIndex: 1000 }}>
+    <nav className="navbar" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', boxShadow: '0 4px 30px rgba(0,0,0,0.1)', position: 'sticky', top: 0, zIndex: 1000, borderBottom: '1px solid rgba(255, 255, 255, 0.3)' }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 20px' }}>
         <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <img src="/logo.png" alt="Al Goni Tours and Travels" style={{ height: '60px' }} />
@@ -29,6 +29,7 @@ const Navbar = () => {
           `}</style>
           <Link to="/" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Home</Link>
           <Link to="/about" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>About Us</Link>
+          <Link to="/bike-trips" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Bike Trips</Link>
           <Link to="/services" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Services</Link>
           <Link to="/contact" className="btn btn-primary" style={{ padding: '8px 20px', color: 'white' }}>Contact Us</Link>
         </div>
@@ -57,6 +58,7 @@ const Navbar = () => {
           <Link to="/" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Home</Link>
           <Link to="/about" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>About Us</Link>
           <Link to="/hajj-umrah" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Hajj & Umrah</Link>
+          <Link to="/bike-trips" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Bike Trips</Link>
           <Link to="/services" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Services</Link>
           <Link to="/contact" onClick={toggleMenu} className="btn btn-primary" style={{ color: 'white', display: 'inline-block' }}>Contact Us</Link>
         </div>

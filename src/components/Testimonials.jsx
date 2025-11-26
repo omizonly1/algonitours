@@ -58,11 +58,8 @@ const Testimonials = () => {
                         <Quote size={80} color="var(--color-gold)" />
                     </div>
 
-                    <div style={{
-                        backgroundColor: 'white',
-                        borderRadius: '20px',
+                    <div className="glass-card" style={{
                         padding: '40px',
-                        boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
                         position: 'relative',
                         overflow: 'hidden'
                     }}>

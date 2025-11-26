@@ -14,7 +14,11 @@ import CustomTours from '../pages/CustomTours';
 import Travel_Insurance from '../pages/Travel_Insurance';
 import FlightBooking from '../pages/FlightBooking';
 import LuxuryUmrah from '../pages/LuxuryUmrah';
+import BikeTrips from '../pages/BikeTrips';
 import UmrahGuideSection from '../pages/UmrahGuideSection';
+import ExploreIndia from '../pages/ExploreIndia';
+import DestinationDetail from '../pages/DestinationDetail';
+import CustomPackage from '../pages/CustomPackage';
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -27,13 +31,17 @@ const AnimatedRoutes = () => {
                 <Route path="/services" element={<PageTransition><Services /></PageTransition>} />
                 <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
                 <Route path="/hajj-umrah" element={<PageTransition><HajjUmrah /></PageTransition>} />
+                <Route path="/luxury-umrah" element={<PageTransition><LuxuryUmrah /></PageTransition>} />
+                <Route path="/bike-trips" element={<PageTransition><BikeTrips /></PageTransition>} />
                 <Route path="/holiday-packages" element={<PageTransition><HolidayPackages /></PageTransition>} />
                 <Route path="/visa-assistance" element={<PageTransition><VisaAssistance /></PageTransition>} />
                 <Route path="/custom-tours" element={<PageTransition><CustomTours /></PageTransition>} />
                 <Route path="/travel-insurance" element={<PageTransition><Travel_Insurance /></PageTransition>} />
                 <Route path="/flight-booking" element={<PageTransition><FlightBooking /></PageTransition>} />
-                <Route path="/luxury-umrah" element={<PageTransition><LuxuryUmrah /></PageTransition>} />
                 <Route path="/umrah-guide" element={<PageTransition><UmrahGuideSection /></PageTransition>} />
+                <Route path="/explore-india" element={<PageTransition><ExploreIndia /></PageTransition>} />
+                <Route path="/destination/:id" element={<PageTransition><DestinationDetail /></PageTransition>} />
+                <Route path="/custom-package" element={<PageTransition><CustomPackage /></PageTransition>} />
             </Routes>
         </AnimatePresence>
     );

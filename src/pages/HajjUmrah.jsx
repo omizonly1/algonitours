@@ -1,8 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { MapPin, Calendar, CheckCircle, Star, Shield, Users } from 'lucide-react';
 
 const HajjUmrah = () => {
+    const navigate = useNavigate();
+
+    const handleBookNow = (pkgTitle) => {
+        navigate('/custom-package', { state: { destination: pkgTitle } });
+    };
+
     const hajjPackages = [
         {
             title: "Economy Hajj Package",
@@ -119,7 +125,13 @@ const HajjUmrah = () => {
                                         View Details
                                     </Link>
                                 ) : (
-                                    <button className="btn btn-primary" style={{ width: '100%', marginTop: '20px' }}>Book Now</button>
+                                    <button
+                                        onClick={() => handleBookNow(pkg.title)}
+                                        className="btn btn-primary"
+                                        style={{ width: '100%', marginTop: '20px' }}
+                                    >
+                                        Book Now
+                                    </button>
                                 )}
                             </div>
                         ))}
@@ -150,7 +162,13 @@ const HajjUmrah = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <button className="btn btn-primary" style={{ width: '100%', marginTop: '20px' }}>Book Now</button>
+                                <button
+                                    onClick={() => handleBookNow(pkg.title)}
+                                    className="btn btn-primary"
+                                    style={{ width: '100%', marginTop: '20px' }}
+                                >
+                                    Book Now
+                                </button>
                             </div>
                         ))}
                     </div>

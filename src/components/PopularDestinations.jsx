@@ -2,59 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, ArrowRight } from 'lucide-react';
-
-const destinations = [
-    {
-        id: 1,
-        name: "Mecca & Medina",
-        country: "Saudi Arabia",
-        image: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        price: "From ₹90,000",
-        link: "/hajj-umrah"
-    },
-    {
-        id: 2,
-        name: "Dubai",
-        country: "UAE",
-        image: "src/assets/burj_al_arab_1.jpg",
-        price: "From ₹65,000",
-        link: "/holiday-packages"
-    },
-    {
-        id: 3,
-        name: "Istanbul",
-        country: "Turkey",
-        image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        price: "From ₹85,000",
-        link: "/holiday-packages"
-    },
-    {
-        id: 4,
-        name: "Bangkok",
-        country: "Thailand",
-        image: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        price: "From ₹55,000",
-        link: "/holiday-packages"
-    },
-    {
-        id: 5,
-        name: "Vietnam",
-        country: "Vietnam",
-        image: "https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        price: "From ₹40,000",
-        link: "/holiday-packages"
-    },
-    {
-        id: 6,
-        name: "Maldives",
-        country: "Maldives",
-        image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        price: "From ₹1,55,000",
-        link: "/holiday-packages"
-    }
-];
+import { destinations } from '../data/destinations';
 
 const PopularDestinations = () => {
+    const displayedDestinations = destinations.slice(0, 3);
+
     return (
         <section className="section-padding" style={{ backgroundColor: 'white' }}>
             <div className="container">
@@ -69,7 +21,7 @@ const PopularDestinations = () => {
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
-                    {destinations.map((dest) => (
+                    {displayedDestinations.map((dest) => (
                         <motion.div
                             key={dest.id}
                             whileHover={{ y: -10 }}
@@ -88,13 +40,12 @@ const PopularDestinations = () => {
                                     alt={dest.name}
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />
-                                <div style={{
+                                <div className="glass-text-overlay" style={{
                                     position: 'absolute',
                                     bottom: 0,
                                     left: 0,
                                     right: 0,
                                     padding: '25px',
-                                    background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 50%, transparent 100%)',
                                     color: 'white'
                                 }}>
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '5px', fontSize: '0.9rem', opacity: 0.9 }}>
