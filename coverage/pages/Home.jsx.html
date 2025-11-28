@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">55.55% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">42.85% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">55.55% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -403,8 +403,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -425,8 +425,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -635,8 +635,8 @@ const Home = () =&gt; {
                   cursor: 'pointer',
                 }}
                 className="service-card"
-                onMouseEnter={<span class="fstat-no" title="function not covered" >(e</span>) =&gt; (<span class="cstat-no" title="statement not covered" >e.currentTarget.style.transform = 'translateY(-5px)')}</span>
-                onMouseLeave={<span class="fstat-no" title="function not covered" >(e</span>) =&gt; (<span class="cstat-no" title="statement not covered" >e.currentTarget.style.transform = 'translateY(0)')}</span>
+                onMouseEnter={(e) =&gt; (e.currentTarget.style.transform = 'translateY(-5px)')}
+                onMouseLeave={(e) =&gt; (e.currentTarget.style.transform = 'translateY(0)')}
               &gt;
                 &lt;Link to="/flight-booking" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}&gt;
                   &lt;div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}&gt;
@@ -657,8 +657,8 @@ const Home = () =&gt; {
                   cursor: 'pointer',
                 }}
                 className="service-card"
-                onMouseEnter={<span class="fstat-no" title="function not covered" >(e</span>) =&gt; (<span class="cstat-no" title="statement not covered" >e.currentTarget.style.transform = 'translateY(-5px)')}</span>
-                onMouseLeave={<span class="fstat-no" title="function not covered" >(e</span>) =&gt; (<span class="cstat-no" title="statement not covered" >e.currentTarget.style.transform = 'translateY(0)')}</span>
+                onMouseEnter={(e) =&gt; (e.currentTarget.style.transform = 'translateY(-5px)')}
+                onMouseLeave={(e) =&gt; (e.currentTarget.style.transform = 'translateY(0)')}
               &gt;
                 &lt;Link to="/visa-assistance" style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}&gt;
                   &lt;div style={{ width: '60px', height: '60px', backgroundColor: 'var(--color-white)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.05)' }}&gt;
@@ -766,7 +766,7 @@ export default Home;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-11-28T19:53:01.180Z
+                at 2025-11-28T20:27:59.268Z
             </div>
         <script src="../prettify.js"></script>
         <script>

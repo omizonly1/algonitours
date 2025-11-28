@@ -91,6 +91,7 @@ const Services = () => {
                                         key={index}
                                         to={service.link}
                                         style={cardStyle}
+                                        data-testid={`service-card-${index}`}
                                         onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
                                         onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                                     >
@@ -103,6 +104,7 @@ const Services = () => {
                                 <div
                                     key={index}
                                     style={cardStyle}
+                                    data-testid={`service-card-${index}`}
                                     onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
                                     onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                                 >

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Menu, X, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -13,12 +15,31 @@ const Navbar = () => {
   return (
     <nav className="navbar" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', boxShadow: '0 4px 30px rgba(0,0,0,0.1)', position: 'sticky', top: 0, zIndex: 1000, borderBottom: '1px solid rgba(255, 255, 255, 0.3)' }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 20px' }}>
-        <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <img src="/logo.png" alt="Al Goni Tours and Travels" style={{ height: '60px' }} />
-          <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', fontWeight: '700', color: 'var(--color-text-dark)' }}>
-            Al Goni Tours and Travels
-          </span>
-        </Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          {location.pathname !== '/' && (
+            <button
+              onClick={() => navigate(-1)}
+              style={{
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                color: 'var(--color-text-dark)',
+                display: 'flex',
+                alignItems: 'center',
+                padding: '5px'
+              }}
+              aria-label="Go Back"
+            >
+              <ArrowLeft size={24} />
+            </button>
+          )}
+          <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <img src="/logo.png" alt="Al Goni Tours and Travels" style={{ height: '60px' }} />
+            <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', fontWeight: '700', color: 'var(--color-text-dark)' }}>
+              Al Goni Tours and Travels
+            </span>
+          </Link>
+        </div>
 
         {/* Desktop Menu */}
         <div className="desktop-menu" style={{ display: 'none', gap: '2rem' }}>

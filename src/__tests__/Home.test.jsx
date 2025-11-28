@@ -56,15 +56,29 @@ describe('Home Page', () => {
         expect(flightLink).toHaveAttribute('href', '/flight-booking');
 
         // Test hover effects using data-testid
+
+        // Hajj Card
         const hajjCard = screen.getByTestId('service-card-hajj');
         expect(hajjCard).toBeInTheDocument();
-
-        // Trigger mouse enter
         fireEvent.mouseEnter(hajjCard);
         expect(hajjCard).toHaveStyle({ transform: 'translateY(-5px)' });
-
-        // Trigger mouse leave
         fireEvent.mouseLeave(hajjCard);
         expect(hajjCard).toHaveStyle({ transform: 'translateY(0)' });
+
+        // Flight Card
+        const flightCard = screen.getByTestId('service-card-flight');
+        expect(flightCard).toBeInTheDocument();
+        fireEvent.mouseEnter(flightCard);
+        expect(flightCard).toHaveStyle({ transform: 'translateY(-5px)' });
+        fireEvent.mouseLeave(flightCard);
+        expect(flightCard).toHaveStyle({ transform: 'translateY(0)' });
+
+        // Visa Card
+        const visaCard = screen.getByTestId('service-card-visa');
+        expect(visaCard).toBeInTheDocument();
+        fireEvent.mouseEnter(visaCard);
+        expect(visaCard).toHaveStyle({ transform: 'translateY(-5px)' });
+        fireEvent.mouseLeave(visaCard);
+        expect(visaCard).toHaveStyle({ transform: 'translateY(0)' });
     });
 });
