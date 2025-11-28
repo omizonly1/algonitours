@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,28 +42,38 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      {isOpen && (
-        <div className="mobile-menu" style={{
-          position: 'absolute',
-          top: '100%',
-          left: 0,
-          width: '100%',
-          backgroundColor: 'var(--color-white)',
-          padding: '2rem',
-          boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '1.5rem',
-          textAlign: 'center'
-        }}>
-          <Link to="/" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Home</Link>
-          <Link to="/about" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>About Us</Link>
-          <Link to="/hajj-umrah" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Hajj & Umrah</Link>
-          <Link to="/bike-trips" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Bike Trips</Link>
-          <Link to="/services" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Services</Link>
-          <Link to="/contact" onClick={toggleMenu} className="btn btn-outline" style={{ color: 'var(--color-text-dark)', display: 'inline-block' }}>Contact Us</Link>
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="mobile-menu"
+            style={{
+              position: 'absolute',
+              top: '100%',
+              left: 0,
+              width: '100%',
+              backgroundColor: 'var(--color-white)',
+              padding: '2rem',
+              boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1.5rem',
+              textAlign: 'center',
+              overflow: 'hidden'
+            }}
+          >
+            <Link to="/" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Home</Link>
+            <Link to="/about" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>About Us</Link>
+            <Link to="/hajj-umrah" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Hajj & Umrah</Link>
+            <Link to="/bike-trips" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Bike Trips</Link>
+            <Link to="/services" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Services</Link>
+            <Link to="/contact" onClick={toggleMenu} className="btn btn-outline" style={{ color: 'var(--color-text-dark)', display: 'inline-block' }}>Contact Us</Link>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
