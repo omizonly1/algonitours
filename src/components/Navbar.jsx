@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link to="/about" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>About Us</Link>
           <Link to="/bike-trips" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Bike Trips</Link>
           <Link to="/services" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}>Services</Link>
-          <Link to="/contact" className="btn btn-primary" style={{ padding: '8px 20px', color: 'white' }}>Contact Us</Link>
+          <Link to="/contact" className="btn btn-outline" style={{ padding: '8px 20px', color: 'var(--color-text-dark)' }}>Contact Us</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -60,7 +60,7 @@ const Navbar = () => {
           <Link to="/hajj-umrah" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Hajj & Umrah</Link>
           <Link to="/bike-trips" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Bike Trips</Link>
           <Link to="/services" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}>Services</Link>
-          <Link to="/contact" onClick={toggleMenu} className="btn btn-primary" style={{ color: 'white', display: 'inline-block' }}>Contact Us</Link>
+          <Link to="/contact" onClick={toggleMenu} className="btn btn-outline" style={{ color: 'var(--color-text-dark)', display: 'inline-block' }}>Contact Us</Link>
         </div>
       )}
     </nav>

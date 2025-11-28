@@ -18,7 +18,7 @@ const PopularDestinations = () => {
                         <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Popular <span style={{ color: 'var(--color-gold)' }}>Destinations</span></h2>
                         <p style={{ color: 'var(--color-text-light)' }}>Explore our top-rated travel locations</p>
                     </div>
-                    <Link to="/holiday-packages" className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <Link to="/holiday-packages" className="btn btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', whiteSpace: 'nowrap' }}>
                         View All <ArrowRight size={18} />
                     </Link>
                 </div>

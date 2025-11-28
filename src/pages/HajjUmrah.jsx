@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { MapPin, Calendar, CheckCircle, Star, Shield, Users } from 'lucide-react';
-
 import { usePackages } from '../context/PackageContextDefinition';
+import missionImg from '../assets/mission.png';
 
 const HajjUmrah = () => {
     const navigate = useNavigate();
@@ -18,19 +18,39 @@ const HajjUmrah = () => {
     return (
         <div>
             {/* Hero Section */}
-            <section style={{
-                backgroundColor: 'var(--color-text-dark)',
-                color: 'white',
-                textAlign: 'center',
-                backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://images.unsplash.com/photo-1565552629477-e254f38aa89d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-            }}>
+            <section className="about-hero" style={{ textAlign: 'left', overflow: 'hidden' }}>
                 <div className="container">
-                    <h1 style={{ fontSize: '3.5rem', color: 'var(--color-gold)', marginBottom: '20px' }}>Hajj & Umrah Services</h1>
-                    <p style={{ fontSize: '1.2rem', maxWidth: '700px', margin: '0 auto', color: '#eee' }}>
-                        Embark on a spiritual journey of a lifetime with our comprehensive and worry-free packages.
-                    </p>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '40px' }}>
+                        <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
+                            <img
+                                src={missionImg}
+                                alt="Hajj Pilgrim Character"
+                                style={{
+                                    maxWidth: '100%',
+                                    height: 'auto',
+                                    maxHeight: '500px',
+                                    filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.3))',
+                                    animation: 'float 6s ease-in-out infinite',
+                                    borderRadius: '12px'
+                                }}
+                            />
+                            <style>{`
+                                @keyframes float {
+                                    0% { transform: translateY(0px); }
+                                    50% { transform: translateY(-20px); }
+                                    100% { transform: translateY(0px); }
+                                }
+                            `}</style>
+                        </div>
+                        <div style={{ flex: '1 1 500px' }}>
+                            <h1 className="about-title" style={{ color: 'var(--color-gold)', fontSize: '3.5rem', lineHeight: '1.2' }}>Hajj & Umrah Services</h1>
+                            <p className="about-tagline" style={{ color: '#eee', fontSize: '1.5rem', marginTop: '10px' }}>Spiritual Journeys of a Lifetime</p>
+                            <p className="about-subtext" style={{ color: '#ddd', fontSize: '1.1rem', marginTop: '20px', maxWidth: '600px' }}>
+                                Embark on a spiritual journey of a lifetime with our comprehensive and worry-free packages.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 

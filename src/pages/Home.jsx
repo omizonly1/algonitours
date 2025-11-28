@@ -45,9 +45,9 @@ const Home = () => {
           <p style={{ fontSize: '1.3rem', marginBottom: '2.5rem', maxWidth: '700px', margin: '0 auto 2.5rem', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
             Experience luxury travel and spiritual journeys tailored just for you. We turn your dreams into unforgettable memories.
           </p>
-          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
-            <Link to="/services" className="btn btn-primary" style={{ padding: '15px 35px', fontSize: '1.1rem' }}>Explore Packages</Link>
-            <Link to="/contact" className="btn btn-outline" style={{ padding: '15px 35px', fontSize: '1.1rem', borderColor: 'var(--color-cream)', color: 'var(--color-cream)' }}>Contact Us</Link>
+          <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link to="/services" className="btn btn-outline btn-hero">Explore Packages</Link>
+            <Link to="/contact" className="btn btn-outline btn-hero" style={{ borderColor: 'var(--color-cream)', color: 'var(--color-cream)' }}>Contact Us</Link>
           </div>
         </div>
       </section>
@@ -219,7 +219,7 @@ const Home = () => {
           <p style={{ maxWidth: '600px', margin: '0 auto 2.5rem', color: '#ccc' }}>
             Contact us today to plan your next adventure. We are here to make it perfect.
           </p>
-          <Link to="/contact" className="btn btn-primary" style={{ padding: '15px 40px' }}>Get a Quote</Link>
+          <Link to="/contact" className="btn btn-outline" style={{ padding: '15px 40px' }}>Get a Quote</Link>
         </div>
       </section>
     </div>
