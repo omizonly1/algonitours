@@ -13,8 +13,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', boxShadow: '0 4px 30px rgba(0,0,0,0.1)', position: 'sticky', top: 0, zIndex: 1000, borderBottom: '1px solid rgba(255, 255, 255, 0.3)' }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 20px' }}>
+    <nav className="navbar" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', boxShadow: '0 4px 30px rgba(0,0,0,0.1)', position: 'sticky', top: 0, zIndex: 1000, borderBottom: '1px solid rgba(255, 255, 255, 0.3)', paddingTop: 'calc(1rem + env(safe-area-inset-top))', paddingBottom: '1rem' }}>
+      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingLeft: '20px', paddingRight: '20px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
           {location.pathname !== '/' && (
             <button
