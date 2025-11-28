@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import AnimatedRoutes from './components/AnimatedRoutes';
 import ScrollToTop from './components/ScrollToTop';
+import FloatingContact from './components/FloatingContact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <main style={{ flex: 1 }}>
           <AnimatedRoutes />
         </main>
+        <FloatingContact />
         <Footer />
       </div>
     </Router>

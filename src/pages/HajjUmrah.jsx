@@ -1,76 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { MapPin, Calendar, CheckCircle, Star, Shield, Users } from 'lucide-react';
 
-const HajjUmrah = () => {
-    const hajjPackages = [
-        {
-            title: "Economy Hajj Package",
-            price: "From ₹7,00,000",
-            features: [
-                "Round-trip flights",
-                "3-star hotel accommodation",
-                "Visa processing",
-                "Group transport",
-                "Religious guide"
-            ]
-        },
-        {
-            title: "Premium Hajj Package",
-            price: "From ₹12,00,000",
-            features: [
-                "Direct flights",
-                "5-star hotel near Haram",
-                "VIP Visa processing",
-                "Private transport",
-                "Dedicated guide",
-                "Full board meals"
-            ]
-        }
-    ];
+import { usePackages } from '../context/PackageContextDefinition';
 
-    const umrahPackages = [
-        {
-            title: "Economy Umrah",
-            price: "From ₹90,000",
-            features: [
-                "Return flights",
-                "Standard hotels",
-                "Visa included",
-                "Free Airport Transfer",
-                "Free Travel Insurance"
-            ]
-        },
-        {
-            title: "Deluxe Umrah",
-            price: "From ₹1,20,000",
-            features: [
-                "Round-trip flights",
-                "Luxury hotels (walking distance)",
-                "Visa included",
-                "Free Airport Transfer",
-                "Free Travel Insurance",
-                "Private transport",
-                "Ziyarat tours",
-                "Full board meals"
-            ]
-        },
-        {
-            title: "Luxury Umrah",
-            price: "From ₹2,90,000",
-            link: "/luxury-umrah",
-            features: [
-                "Premium airlines (Emirates or similar)",
-                "Luxury hotels (Clock Tower or similar)",
-                "Visa included",
-                "Insurance included",
-                "Private GMC/SUV/Sedan",
-                "Ziyarat tours",
-                "Buffet meals",
-                "Laundry service"
-            ]
-        }
-    ];
+const HajjUmrah = () => {
+    const navigate = useNavigate();
+    const { packages } = usePackages();
+
+    const hajjPackages = packages.filter(pkg => pkg.type === 'Hajj');
+    const umrahPackages = packages.filter(pkg => pkg.type === 'Umrah');
+
+    const handleBookNow = (pkgTitle) => {
+        navigate('/custom-package', { state: { destination: pkgTitle } });
+    };
 
     return (
         <div>
@@ -119,7 +62,13 @@ const HajjUmrah = () => {
                                         View Details
                                     </Link>
                                 ) : (
-                                    <button className="btn btn-primary" style={{ width: '100%', marginTop: '20px' }}>Book Now</button>
+                                    <button
+                                        onClick={() => handleBookNow(pkg.title)}
+                                        className="btn btn-primary"
+                                        style={{ width: '100%', marginTop: '20px' }}
+                                    >
+                                        Book Now
+                                    </button>
                                 )}
                             </div>
                         ))}
@@ -150,7 +99,13 @@ const HajjUmrah = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <button className="btn btn-primary" style={{ width: '100%', marginTop: '20px' }}>Book Now</button>
+                                <button
+                                    onClick={() => handleBookNow(pkg.title)}
+                                    className="btn btn-primary"
+                                    style={{ width: '100%', marginTop: '20px' }}
+                                >
+                                    Book Now
+                                </button>
                             </div>
                         ))}
                     </div>

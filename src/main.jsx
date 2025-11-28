@@ -4,10 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import ErrorBoundary from './components/ErrorBoundary.jsx'
 
+import { PackageProvider } from './context/PackageContext';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ErrorBoundary>
-      <App />
+      <PackageProvider>
+        <App />
+      </PackageProvider>
     </ErrorBoundary>
   </StrictMode>,
 )

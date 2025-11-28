@@ -52,6 +52,7 @@ button {
   cursor: pointer;
 }
 
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -61,36 +62,49 @@ button {
 .btn {
   padding: 12px 24px;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--color-gold), var(--color-rose-gold));
   color: var(--color-white);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-primary:hover {
   opacity: 0.9;
   transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(212, 175, 55, 0.35);
 }
 
 .btn-outline {
-  border: 2px solid var(--color-gold);
+  border: 1px solid var(--color-gold);
   color: var(--color-gold);
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .btn-outline:hover {
   background: var(--color-gold);
   color: var(--color-white);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
 }
 
 .section-padding {
   padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
 }
 
 .text-center {
@@ -825,4 +839,369 @@ Luxury Umrah
 .premium-card p {
   font-size: 0.9rem;
   color: #5a5147;
+}
+
+/*=========================
+
+UmrahGuideSection
+
+===========================*/
+/* Layout */
+.umrah-page {
+  background: #f7f2ea;
+  /* soft cream */
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Hero */
+.umrah-hero {
+  padding: 3.5rem 1.5rem 2.5rem;
+  background: radial-gradient(circle at top left, #f9e7d7, #f4eee7);
+  border-bottom: 1px solid rgba(180, 145, 100, 0.25);
+}
+
+.umrah-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.umrah-hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+  color: #a17a3b;
+}
+
+.umrah-hero-title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: #141414;
+}
+
+.umrah-hero-subtitle {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  color: #6a5431;
+}
+
+.umrah-hero-text {
+  font-size: 0.98rem;
+  max-width: 700px;
+  color: #4b4232;
+}
+
+/* Cards */
+.umrah-content {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.umrah-card {
+  background: #fdfaf6;
+  border-radius: 18px;
+  padding: 1.5rem 1.6rem 1.7rem;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(205, 178, 128, 0.45);
+}
+
+.umrah-card h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.3rem;
+  color: #2b2418;
+}
+
+.umrah-card h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.05rem;
+  color: #3b311f;
+}
+
+.umrah-list {
+  padding-left: 1.1rem;
+  margin: 0.4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: #4d4029;
+}
+
+.umrah-list li {
+  line-height: 1.5;
+}
+
+/* Highlights & Quotes */
+.umrah-highlight {
+  margin-top: 0.9rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid #c08c3f;
+  background: #fbf3e4;
+  border-radius: 0 12px 12px 0;
+}
+
+.umrah-quote-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9a7539;
+  margin-bottom: 0.2rem;
+}
+
+.umrah-quote {
+  font-size: 0.92rem;
+  color: #3a3021;
+}
+
+.umrah-quote-ref {
+  font-style: italic;
+  font-size: 0.86rem;
+  color: #85663b;
+}
+
+/* Arabic text */
+.umrah-arabic {
+  margin-top: 0.35rem;
+  font-size: 1rem;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.7;
+}
+
+/* Notes & CTA */
+.umrah-note {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: #756145;
+}
+
+.umrah-cta {
+  margin-top: 0.7rem;
+  font-size: 0.95rem;
+  color: #2d281b;
+}
+
+/* Disclaimer */
+.umrah-disclaimer {
+  border-style: dashed;
+  border-color: rgba(178, 134, 64, 0.6);
+  background: #f5a0a0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .umrah-hero-title {
+    font-size: 1.7rem;
+  }
+
+  .umrah-card {
+    padding: 1.2rem 1.1rem 1.3rem;
+  }
+}
+
+/* Destination Card Title */
+.destination-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: var(--font-heading);
+  color: white;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.15);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.glass-text-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+  backdrop-filter: blur(2px);
+}
+
+/* About us Page */
+
+.about-page {
+  background: #f8f4ee;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.about-hero {
+  background: radial-gradient(circle at top left, #f5e3c8, #1b1a1f);
+  color: #fff;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.about-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+}
+
+.about-tagline {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.about-subtext {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #2b2722;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #85623b;
+}
+
+.section-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #4b4338;
+}
+
+.section-text.italic {
+  font-style: italic;
+}
+
+.founder-message-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(180, 145, 100, 0.3);
+}
+
+.founder-signature {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #2b2722;
+}
+
+.founder-signature span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Layout helpers */
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.section-list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.section-list li {
+  margin-bottom: 0.4rem;
+  color: #4b4338;
+}
+
+.values-grid,
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.value-card,
+.trust-item {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid rgba(210, 185, 140, 0.4);
+}
+
+.value-title,
+.trust-title {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #3d342b;
+  font-weight: 600;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .about-hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2.8rem;
+  }
+
+  .two-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .values-grid,
+  .trust-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
