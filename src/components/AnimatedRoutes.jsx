@@ -15,6 +15,11 @@ import Travel_Insurance from '../pages/Travel_Insurance';
 import FlightBooking from '../pages/FlightBooking';
 import LuxuryUmrah from '../pages/LuxuryUmrah';
 import BikeTrips from '../pages/BikeTrips';
+import AdminLogin from '../pages/Admin/AdminLogin';
+import AdminDashboard from '../pages/Admin/AdminDashboard';
+import ManagePackages from '../pages/Admin/ManagePackages';
+import AddDestination from '../pages/Admin/AddDestination';
+import EditPackage from '../pages/Admin/EditPackage';
 import UmrahGuideSection from '../pages/UmrahGuideSection';
 import ExploreIndia from '../pages/ExploreIndia';
 import DestinationDetail from '../pages/DestinationDetail';
@@ -42,6 +47,14 @@ const AnimatedRoutes = () => {
                 <Route path="/explore-india" element={<PageTransition><ExploreIndia /></PageTransition>} />
                 <Route path="/destination/:id" element={<PageTransition><DestinationDetail /></PageTransition>} />
                 <Route path="/custom-package" element={<PageTransition><CustomPackage /></PageTransition>} />
+
+                {/* Admin Routes */}
+                <Route path="/admin" element={<AdminLogin />} />
+                <Route path="/admin/dashboard" element={<AdminDashboard />}>
+                    <Route path="packages" element={<ManagePackages />} />
+                    <Route path="add-destination" element={<AddDestination />} />
+                    <Route path="edit-package/:id" element={<EditPackage />} />
+                </Route>
             </Routes>
         </AnimatePresence>
     );

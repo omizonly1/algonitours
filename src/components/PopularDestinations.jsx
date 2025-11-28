@@ -2,10 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, ArrowRight } from 'lucide-react';
-import { destinations } from '../data/destinations';
+import { usePackages } from '../context/PackageContextDefinition';
 
 const PopularDestinations = () => {
-    const displayedDestinations = destinations.slice(0, 3);
+    const { packages } = usePackages();
+    const displayedDestinations = packages
+        .filter(pkg => pkg.type === 'Destination')
+        .slice(0, 3);
 
     return (
         <section className="section-padding" style={{ backgroundColor: 'white' }}>

@@ -9,8 +9,11 @@ import Newsletter from '../components/Newsletter';
 import Partners from '../components/Partners';
 import Stats from '../components/Stats';
 import BlogPreview from '../components/BlogPreview';
+import { usePackages } from '../context/PackageContextDefinition';
 
 const Home = () => {
+  const { packages } = usePackages();
+
   return (
     <div>
       {/* Hero Section */}
@@ -49,12 +52,8 @@ const Home = () => {
         </div>
       </section>
 
-
-
       {/* Partners */}
       <Partners />
-
-
 
       {/* Popular Destinations */}
       <RevealOnScroll>
@@ -223,7 +222,7 @@ const Home = () => {
           <Link to="/contact" className="btn btn-primary" style={{ padding: '15px 40px' }}>Get a Quote</Link>
         </div>
       </section>
-    </div >
+    </div>
   );
 };
 

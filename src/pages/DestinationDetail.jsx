@@ -17,6 +17,78 @@ const DestinationDetail = () => {
         navigate('/custom-package', { state: { destination: destination.name } });
     };
 
+    // Check if this destination has multiple sub-packages (like Vietnam)
+    if (destination.packages) {
+        return (
+            <div className="visa-section">
+                <div className="visa-container">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="visa-header text-center"
+                    >
+                        <div className="visa-kicker">Explore</div>
+                        <h1 className="visa-title">{destination.name} <span className="text-gold">Packages</span></h1>
+                        <p className="visa-subtitle" style={{ margin: '0 auto' }}>{destination.description}</p>
+                    </motion.div>
+
+                    <div className="visa-grid">
+                        {destination.packages.map((pkg, index) => (
+                            <motion.div
+                                key={pkg.id}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                className="visa-card"
+                                style={{ padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
+                            >
+                                <div style={{ position: 'relative', height: '200px' }}>
+                                    <img
+                                        src={pkg.image}
+                                        alt={pkg.name}
+                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                    />
+                                    <div style={{
+                                        position: 'absolute',
+                                        bottom: 0,
+                                        left: 0,
+                                        right: 0,
+                                        background: 'linear-gradient(to top, rgba(0,0,0,0.7), transparent)',
+                                        padding: '1rem',
+                                        color: 'white'
+                                    }}>
+                                        <div style={{ display: 'flex', alignItems: 'center', fontSize: '0.85rem', marginBottom: '0.25rem' }}>
+                                            <MapPin size={14} style={{ marginRight: '0.25rem', color: 'var(--color-gold)' }} />
+                                            {destination.name}
+                                        </div>
+                                        <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', margin: 0, color: 'white' }}>{pkg.name}</h3>
+                                    </div>
+                                </div>
+                                <div style={{ padding: '1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                                    <p style={{ color: 'var(--color-text-light)', marginBottom: '1.5rem', fontSize: '0.95rem', flex: 1 }}>{pkg.description}</p>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
+                                        <div>
+                                            <span style={{ fontSize: '0.75rem', color: '#888', display: 'block' }}>Starting from</span>
+                                            <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: 'var(--color-gold)' }}>{pkg.price}</span>
+                                        </div>
+                                        <button
+                                            onClick={() => navigate(`/destination/${pkg.id}`)}
+                                            className="visa-button"
+                                            style={{ padding: '0.5rem 1rem', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '5px', cursor: 'pointer', border: 'none' }}
+                                        >
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div>
             {/* Hero Section */}
