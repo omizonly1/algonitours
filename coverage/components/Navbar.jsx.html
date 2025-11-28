@@ -1,65 +1,65 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
-  <title>Code coverage report for components/Navbar.jsx</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="../prettify.css" />
-  <link rel="stylesheet" href="../base.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style type='text/css'>
-    .coverage-summary .sorter {
-      background-image: url(../sort-arrow-sprite.png);
-    }
-  </style>
+    <title>Code coverage report for components/Navbar.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
 </head>
-
+    
 <body>
-  <div class='wrapper'>
+<div class='wrapper'>
     <div class='pad1'>
-      <h1><a href="../index.html">All files</a> / <a href="index.html">components</a> Navbar.jsx</h1>
-      <div class='clearfix'>
-
-        <div class='fl pad1y space-right2'>
-          <span class="strong">100% </span>
-          <span class="quiet">Statements</span>
-          <span class='fraction'>5/5</span>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">components</a> Navbar.jsx</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>5/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>4/4</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>5/5</span>
+            </div>
+        
+            
         </div>
-
-
-        <div class='fl pad1y space-right2'>
-          <span class="strong">100% </span>
-          <span class="quiet">Branches</span>
-          <span class='fraction'>4/4</span>
-        </div>
-
-
-        <div class='fl pad1y space-right2'>
-          <span class="strong">100% </span>
-          <span class="quiet">Functions</span>
-          <span class='fraction'>2/2</span>
-        </div>
-
-
-        <div class='fl pad1y space-right2'>
-          <span class="strong">100% </span>
-          <span class="quiet">Lines</span>
-          <span class='fraction'>5/5</span>
-        </div>
-
-
-      </div>
-      <p class="quiet">
-        Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the
-        previous block.
-      </p>
-      <template id="filterTemplate">
-        <div class="quiet">
-          Filter:
-          <input type="search" id="fileSearch">
-        </div>
-      </template>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
     </div>
     <div class='status-line high'></div>
     <pre><table class="coverage">
@@ -236,7 +236,7 @@ const Navbar = () =&gt; {
           &lt;Link to="/about" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}&gt;About Us&lt;/Link&gt;
           &lt;Link to="/bike-trips" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}&gt;Bike Trips&lt;/Link&gt;
           &lt;Link to="/services" style={{ fontWeight: '600', color: 'var(--color-text-dark)' }}&gt;Services&lt;/Link&gt;
-          &lt;Link to="/contact" className="btn btn-primary" style={{ padding: '8px 20px', color: 'white' }}&gt;Contact Us&lt;/Link&gt;
+          &lt;Link to="/contact" className="btn btn-outline" style={{ padding: '8px 20px', color: 'var(--color-text-dark)' }}&gt;Contact Us&lt;/Link&gt;
         &lt;/div&gt;
 &nbsp;
         {/* Mobile Menu Button */}
@@ -265,7 +265,7 @@ const Navbar = () =&gt; {
           &lt;Link to="/hajj-umrah" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}&gt;Hajj &amp; Umrah&lt;/Link&gt;
           &lt;Link to="/bike-trips" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}&gt;Bike Trips&lt;/Link&gt;
           &lt;Link to="/services" onClick={toggleMenu} style={{ fontSize: '1.1rem', fontWeight: '600' }}&gt;Services&lt;/Link&gt;
-          &lt;Link to="/contact" onClick={toggleMenu} className="btn btn-primary" style={{ color: 'white', display: 'inline-block' }}&gt;Contact Us&lt;/Link&gt;
+          &lt;Link to="/contact" onClick={toggleMenu} className="btn btn-outline" style={{ color: 'var(--color-text-dark)', display: 'inline-block' }}&gt;Contact Us&lt;/Link&gt;
         &lt;/div&gt;
       )}
     &lt;/nav&gt;
@@ -273,27 +273,23 @@ const Navbar = () =&gt; {
 };
 &nbsp;
 export default Navbar;
-&nbsp;</pre>
-    </td>
-    </tr>
-    </table>
-    </pre>
+&nbsp;</pre></td></tr></table></pre>
 
-    <div class='push'></div><!-- for sticky footer -->
-  </div><!-- /wrapper -->
-  <div class='footer quiet pad2 space-top1 center small'>
-    Code coverage generated by
-    <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-    at 2025-11-28T18:16:24.426Z
-  </div>
-  <script src="../prettify.js"></script>
-  <script>
-    window.onload = function () {
-      prettyPrint();
-    };
-  </script>
-  <script src="../sorter.js"></script>
-  <script src="../block-navigation.js"></script>
-</body>
-
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-11-28T19:53:01.180Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
 </html>
+    

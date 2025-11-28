@@ -75,6 +75,7 @@ const Home = () => {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
               {/* Service 1 */}
               <div
+                data-testid="service-card-hajj"
                 style={{
                   padding: '40px',
                   backgroundColor: 'var(--color-soft-beige)',
@@ -96,6 +97,7 @@ const Home = () => {
               </div>
               {/* Service 2 */}
               <div
+                data-testid="service-card-flight"
                 style={{
                   padding: '40px',
                   backgroundColor: 'var(--color-soft-beige)',
@@ -117,6 +119,7 @@ const Home = () => {
               </div>
               {/* Service 3 */}
               <div
+                data-testid="service-card-visa"
                 style={{
                   padding: '40px',
                   backgroundColor: 'var(--color-soft-beige)',
