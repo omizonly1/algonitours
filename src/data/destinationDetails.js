@@ -4,7 +4,7 @@ export const destinationDetails = {
         name: "Kashmir",
         title: "The Jewel of Srinagar",
         description: "Experience the breathtaking beauty of Kashmir with our premium 5-day itinerary.",
-        image: "https://images.unsplash.com/photo-1566837945700-30057527ade0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        image: "../src/assets/Kashmir_1.jpg",
         price: "₹25,000",
         duration: "5 Days / 4 Nights",
         itinerary: [
@@ -86,7 +86,7 @@ export const destinationDetails = {
         name: "Andaman & Nicobar",
         title: "Island Paradise",
         description: "Explore the untouched beauty of the Andaman islands.",
-        image: "https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        image: "../src/assets/andaman_1.jpg",
         price: "₹35,000",
         duration: "5 Days / 4 Nights",
         itinerary: [

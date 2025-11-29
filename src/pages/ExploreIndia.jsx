@@ -8,7 +8,7 @@ const indianDestinations = [
         id: 'kashmir',
         name: "Kashmir",
         state: "Jammu & Kashmir",
-        image: "https://images.unsplash.com/photo-1566837945700-30057527ade0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "../src/assets/Kashmir_3.jpg",
         description: "Paradise on Earth, known for its pristine lakes and snow-capped mountains.",
         price: "From ₹25,000"
     },
@@ -48,7 +48,7 @@ const indianDestinations = [
         id: 'andaman',
         name: "Andaman & Nicobar",
         state: "Andaman",
-        image: "https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "../src/assets/andaman_2.jpg",
         description: "Exotic islands with crystal clear waters and white sandy beaches.",
         price: "From ₹35,000"
     }
