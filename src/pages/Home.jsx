@@ -21,13 +21,14 @@ const Home = () => {
         backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '85vh',
+        minHeight: '85vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         color: 'white',
         textAlign: 'center',
-        position: 'relative'
+        position: 'relative',
+        padding: '80px 0'
       }}>
         <div style={{
           position: 'absolute',
@@ -39,10 +40,10 @@ const Home = () => {
           pointerEvents: 'none'
         }}></div>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{ fontSize: '4rem', marginBottom: '1.5rem', color: 'var(--color-cream)', textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+          <h1 className="home-hero-title" style={{ fontSize: '4rem', marginBottom: '1.5rem', color: 'var(--color-cream)', textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
             Discover the World with <span style={{ color: 'var(--color-gold)' }}><br></br>Al Goni Tours and Travels</span>
           </h1>
-          <p style={{ fontSize: '1.3rem', marginBottom: '2.5rem', maxWidth: '700px', margin: '0 auto 2.5rem', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
+          <p className="home-hero-subtitle" style={{ fontSize: '1.3rem', marginBottom: '2.5rem', maxWidth: '700px', margin: '0 auto 2.5rem', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
             Experience luxury travel and spiritual journeys tailored just for you. We turn your dreams into unforgettable memories.
           </p>
           <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -50,6 +51,17 @@ const Home = () => {
             <Link to="/contact" className="btn btn-outline btn-hero" style={{ borderColor: 'var(--color-cream)', color: 'var(--color-cream)' }}>Contact Us</Link>
           </div>
         </div>
+        <style>{`
+          @media (max-width: 768px) {
+            .home-hero-title {
+              fontSize: 2.5rem !important;
+            }
+            .home-hero-subtitle {
+              fontSize: 1.1rem !important;
+              padding: 0 15px;
+            }
+          }
+        `}</style>
       </section>
 
       {/* Partners */}
@@ -72,7 +84,7 @@ const Home = () => {
           </div>
 
           <RevealOnScroll>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
               {/* Service 1 */}
               <div
                 data-testid="service-card-hajj"
@@ -149,7 +161,7 @@ const Home = () => {
         <div className="container">
           <RevealOnScroll delay={0.2}>
             <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '50px' }}>
-              <div style={{ flex: 1, minWidth: '300px' }}>
+              <div style={{ flex: 1, minWidth: '100%' }}>
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Why Choose <span style={{ color: 'var(--color-gold)' }}>Al Goni Tours and Travels?</span></h2>
                 <p style={{ marginBottom: '2rem', color: 'var(--color-text-light)' }}>
                   We are committed to excellence in every aspect of your journey. Here is why thousands of travelers trust us.
@@ -176,7 +188,7 @@ const Home = () => {
                 </ul>
                 <Link to="/about" className="btn btn-primary" style={{ marginTop: '20px', display: 'inline-block' }}>Learn More About Us</Link>
               </div>
-              <div style={{ flex: 1, minWidth: '300px' }}>
+              <div style={{ flex: 1, minWidth: '100%' }}>
                 <img
                   src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=2021&q=80"
                   alt="Travel"

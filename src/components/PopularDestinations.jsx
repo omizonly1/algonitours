@@ -13,7 +13,7 @@ const PopularDestinations = () => {
     return (
         <section className="section-padding" style={{ backgroundColor: 'white' }}>
             <div className="container">
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: '3rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: '3rem', flexWrap: 'wrap', gap: '20px' }}>
                     <div>
                         <h2 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>Popular <span style={{ color: 'var(--color-gold)' }}>Destinations</span></h2>
                         <p style={{ color: 'var(--color-text-light)' }}>Explore our top-rated travel locations</p>

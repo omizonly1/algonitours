@@ -20,8 +20,8 @@ const HajjUmrah = () => {
             {/* Hero Section */}
             <section className="about-hero" style={{ textAlign: 'left', overflow: 'hidden' }}>
                 <div className="container">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '40px' }}>
-                        <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
+                    <div className="hero-content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '40px' }}>
+                        <div className="hero-image-container" style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
                             <img
                                 src={missionImg}
                                 alt="Hajj Pilgrim Character"
@@ -34,23 +34,39 @@ const HajjUmrah = () => {
                                     borderRadius: '12px'
                                 }}
                             />
-                            <style>{`
-                                @keyframes float {
-                                    0% { transform: translateY(0px); }
-                                    50% { transform: translateY(-20px); }
-                                    100% { transform: translateY(0px); }
-                                }
-                            `}</style>
                         </div>
-                        <div style={{ flex: '1 1 500px' }}>
+                        <div className="hero-text-container" style={{ flex: '1 1 500px' }}>
                             <h1 className="about-title" style={{ color: 'var(--color-gold)', fontSize: '3.5rem', lineHeight: '1.2' }}>Hajj & Umrah Services</h1>
                             <p className="about-tagline" style={{ color: '#eee', fontSize: '1.5rem', marginTop: '10px' }}>Spiritual Journeys of a Lifetime</p>
                             <p className="about-subtext" style={{ color: '#ddd', fontSize: '1.1rem', marginTop: '20px', maxWidth: '600px' }}>
                                 Embark on a spiritual journey of a lifetime with our comprehensive and worry-free packages.
                             </p>
                         </div>
-
                     </div>
+                    <style>{`
+                        @keyframes float {
+                            0% { transform: translateY(0px); }
+                            50% { transform: translateY(-20px); }
+                            100% { transform: translateY(0px); }
+                        }
+                        @media (max-width: 768px) {
+                            .hero-content {
+                                flex-direction: column-reverse;
+                                text-align: center;
+                                gap: 30px !important;
+                            }
+                            .hero-image-container, .hero-text-container {
+                                flex: 1 1 100% !important;
+                                width: 100%;
+                            }
+                            .about-title {
+                                fontSize: 2.5rem !important;
+                            }
+                            .about-tagline {
+                                fontSize: 1.2rem !important;
+                            }
+                        }
+                    `}</style>
                 </div>
             </section>
 
