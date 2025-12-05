@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { MapPin, Calendar, CheckCircle, Star, Shield, Users } from 'lucide-react';
 import { usePackages } from '../context/PackageContextDefinition';
-import missionImg from '../assets/mission.png';
+const missionImg = "/assets/mission.png";
 
 const HajjUmrah = () => {
     const navigate = useNavigate();
