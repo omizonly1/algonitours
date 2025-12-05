@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 const partners = [
     { name: "Emirates", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Emirates_logo.svg" },
-    { name: "Saudia", logo: "/src/assets/saudia-airlines-seeklogo.png" },
+    { name: "Saudia", logo: "/assets/saudia-airlines-seeklogo.png" },
     { name: "Qatar Airways", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Qatar_Airways_Logo.svg/1200px-Qatar_Airways_Logo.svg.png" },
     { name: "Hilton", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hilton_Worldwide_logo.svg/2560px-Hilton_Worldwide_logo.svg.png" },
-    { name: "Marriott", logo: "/src/assets/Marriott_International.svg" },
-    { name: "IndiGo", logo: "/src/assets/IndiGo_Airlines_logo.svg" }
+    { name: "Marriott", logo: "/assets/Marriott_International.svg" },
+    { name: "IndiGo", logo: "/assets/IndiGo_Airlines_logo.svg" }
 ];
 
 const Partners = () => {

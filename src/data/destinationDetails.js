@@ -4,7 +4,7 @@ export const destinationDetails = {
         name: "Kashmir",
         title: "The Jewel of Srinagar",
         description: "Experience the breathtaking beauty of Kashmir with our premium 5-day itinerary.",
-        image: "../src/assets/Kashmir_1.jpg",
+        image: "/assets/Kashmir_1.jpg",
         price: "₹25,000",
         duration: "5 Days / 4 Nights",
         itinerary: [
@@ -86,7 +86,7 @@ export const destinationDetails = {
         name: "Andaman & Nicobar",
         title: "Island Paradise",
         description: "Explore the untouched beauty of the Andaman islands.",
-        image: "../src/assets/andaman_1.jpg",
+        image: "/assets/andaman_1.jpg",
         price: "₹35,000",
         duration: "5 Days / 4 Nights",
         itinerary: [
@@ -104,13 +104,13 @@ export const destinationDetails = {
         name: "Dubai",
         title: "The City of Gold",
         description: "Experience luxury, modern architecture, and desert adventures in Dubai with our tailored packages.",
-        image: "src/assets/burj_khalifa_1.jpg",
+        image: "/assets/burj_khalifa_1.jpg",
         price: "From ₹65,000",
         packages: [
             {
                 id: "dubai-standard",
                 name: "Dubai Essentials",
-                image: "../src/assets/dubai_museum_1.jpg",
+                image: "/assets/dubai_museum_1.jpg",
                 description: "Experience the must-see attractions of Dubai on a budget.",
                 price: "From ₹65,000",
                 duration: "5 Days / 4 Nights"
@@ -118,7 +118,7 @@ export const destinationDetails = {
             {
                 id: "dubai-luxury",
                 name: "Royal Dubai",
-                image: "../src/assets/burj_khalifa_1.jpg",
+                image: "/assets/burj_khalifa_1.jpg",
                 description: "Indulge in the ultimate luxury experience with premium stays and transfers.",
                 price: "From ₹1,20,000",
                 duration: "6 Days / 5 Nights"
@@ -137,7 +137,7 @@ export const destinationDetails = {
         name: "Dubai Essentials",
         title: "Experience The City of Gold",
         description: "Discover the iconic landmarks of Dubai.",
-        image: "../src/assets/dubai_museum_1.jpg",
+        image: "/assets/dubai_museum_1.jpg",
         price: "₹65,000",
         duration: "5 Days / 4 Nights",
         itinerary: [
@@ -153,7 +153,7 @@ export const destinationDetails = {
         name: "Royal Dubai",
         title: "The Ultimate Luxury",
         description: "Experience Dubai like a royal with 5-star amenities.",
-        image: "../src/assets/burj_khalifa_1.jpg",
+        image: "/assets/burj_khalifa_1.jpg",
         price: "₹1,20,000",
         duration: "6 Days / 5 Nights",
         itinerary: [
@@ -200,7 +200,7 @@ export const destinationDetails = {
             {
                 id: "ottoman-heritage",
                 name: "Ottoman Heritage",
-                image: "../src/assets/turkey_3.jpg",
+                image: "/assets/turkey_3.jpg",
                 description: "Deep dive into the history of the Ottoman Empire.",
                 price: "From ₹1,95,000",
                 duration: "6 Days / 5 Nights"
@@ -227,7 +227,7 @@ export const destinationDetails = {
         name: "Istanbul Classics",
         title: "Historic Istanbul",
         description: "The essential Istanbul experience covering all major landmarks.",
-        image: "../src/assets/turkey_1.jpg",
+        image: "/assets/turkey_1.jpg",
         price: "₹95,000",
         duration: "5 Days / 4 Nights",
         itinerary: [
@@ -243,7 +243,7 @@ export const destinationDetails = {
         name: "Ottoman Heritage",
         title: "Imperial Istanbul",
         description: "Walk in the footsteps of Sultans.",
-        image: "../src/assets/turkey_2.jpg",
+        image: "/assets/turkey_2.jpg",
         price: "₹1,95,000",
         duration: "6 Days / 5 Nights",
         itinerary: [

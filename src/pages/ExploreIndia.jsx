@@ -8,7 +8,7 @@ const indianDestinations = [
         id: 'kashmir',
         name: "Kashmir",
         state: "Jammu & Kashmir",
-        image: "../src/assets/Kashmir_3.jpg",
+        image: "/assets/Kashmir_3.jpg",
         description: "Paradise on Earth, known for its pristine lakes and snow-capped mountains.",
         price: "From ₹25,000"
     },
@@ -48,7 +48,7 @@ const indianDestinations = [
         id: 'andaman',
         name: "Andaman & Nicobar",
         state: "Andaman",
-        image: "../src/assets/andaman_2.jpg",
+        image: "/assets/andaman_2.jpg",
         description: "Exotic islands with crystal clear waters and white sandy beaches.",
         price: "From ₹35,000"
     }

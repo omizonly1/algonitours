@@ -8,7 +8,7 @@ const blogPosts = [
         title: "Complete Guide to Umrah 2025",
         excerpt: "Everything you need to know about the new visa rules, rituals, and best time to visit Mecca.",
         date: "Nov 20, 2024",
-        image: "src/assets/kaaba.jpg",
+        image: "/assets/kaaba.jpg",
         link: "/umrah-guide"
     },
     {

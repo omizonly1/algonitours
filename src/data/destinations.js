@@ -6,25 +6,25 @@ export const destinations = [
         image: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         price: "From ₹90,000",
         link: "/hajj-umrah",
-        video: "src/assets/Makkah_Madinah_Tour_Video_Creation.mp4"
+        video: "/assets/Makkah_Madinah_Tour_Video_Creation.mp4"
     },
     {
         id: 2,
         name: "Dubai",
         country: "UAE",
-        image: "src/assets/burj_al_arab_1.jpg",
+        image: "/assets/burj_al_arab_1.jpg",
         price: "From ₹65,000",
         link: "/destination/dubai",
-        video: "src/assets/Dubai_Tour_Video_Creation.mp4"
+        video: "/assets/Dubai_Tour_Video_Creation.mp4"
     },
     {
         id: 3,
         name: "Istanbul",
         country: "Turkey",
-        image: "src/assets/turkey_1.jpg",
+        image: "/assets/turkey_1.jpg",
         price: "From ₹95,000",
         link: "/destination/istanbul",
-        video: "src/assets/the_beauty_of_the_country_turkey.mp4"
+        video: "/assets/the_beauty_of_the_country_turkey.mp4"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const destinations = [
         image: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         price: "From ₹55,000",
         link: "/destination/bangkok",
-        video: "src/assets/Night_Highway_Timelapse_Video_Generated.mp4"
+        video: "/assets/Night_Highway_Timelapse_Video_Generated.mp4"
     },
     {
         id: 5,
